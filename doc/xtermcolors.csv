@@ -19,7 +19,7 @@ DarkRedA,88,#870000
 DarkSeaGreen,108,#87af87
 DarkTurquoise,44,#00d7d7
 DarkViolet,92,#8700d7
-DarkViolet,128,#af00d7
+DarkVioletA,128,#af00d7
 Fuchsia,13,#ff00ff
 Green,2,#008000
 GreenYellow,154,#afff00
@@ -69,7 +69,7 @@ Chartreuse1,118,#87ff00
 Chartreuse2,82,#5fff00
 Chartreuse2A,112,#87d700
 Chartreuse3,70,#5faf00
-Chartreuse3,76,#5fd700
+Chartreuse3A,76,#5fd700
 Chartreuse4,64,#5f8700
 Cornsilk1,230,#ffffd7
 Cyan1,51,#00ffff
@@ -107,8 +107,8 @@ DeepSkyBlue2,38,#00afd7
 DeepSkyBlue3,31,#0087af
 DeepSkyBlue3A,32,#0087d7
 DeepSkyBlue4,23,#005f5f
-DeepSkyBlue4A,24,#005f87
-DeepSkyBlue4,25,#005faf
+DeepSkyBlue4,24,#005f87
+DeepSkyBlue4A,25,#005faf
 DodgerBlue1,33,#0087ff
 DodgerBlue2,27,#005fff
 DodgerBlue3,26,#005fd7
