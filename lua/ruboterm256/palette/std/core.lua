@@ -1,4 +1,8 @@
-local u = require("ruboterm256.palette.std.duo")
+local s = require("ruboterm256.palette.xterm256.system")
+local a = require("ruboterm256.palette.xterm256.auxiliary")
+local u = require("ruboterm256.palette.std.uno")
+local d = require("ruboterm256.palette.std.duo")
+local t = require("ruboterm256.palette.std.terminal")
 
 local M = {
 	syntax_color_renamed = { i = 1, x = "#33a0ff" },
