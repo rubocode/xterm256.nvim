@@ -7,7 +7,7 @@ vim.notify(sys.Black.x)
 
 function M.setup()
 	local colors = {
-		bg = sys.Black.x,
+		bg = aux.Grey27.x,
 		fg = sys.Aqua.x,
 		red = sys.Red.x,
 	}
