@@ -7,3 +7,5 @@ local M = {
 	bold = { text = "bold" },
 	underline = { text = "underline" },
 }
+
+return M

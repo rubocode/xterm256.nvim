@@ -3,7 +3,6 @@
 local core = require("ruboterm256.palette.std.core")
 local uno = require("ruboterm256.palette.std.uno")
 local duo = require("ruboterm256.palette.std.duo")
-local aux = require("ruboterm256.palette.xterm256.auxiliary")
 local sty = require("ruboterm256.palette.std.style")
 
 local M = {
@@ -43,3 +42,5 @@ local M = {
 	{ name = "Error", fg = core.syntax_color_removed, bg = core.syntax_bg, style = sty.bold },
 	{ name = "Todo", fg = core.syntax_color_added, bg = core.syntax_bg, style = sty.empty },
 }
+
+return M

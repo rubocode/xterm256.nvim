@@ -1,15 +1,15 @@
 local M = {}
 
-local sys = require("ruboterm256.palette.xterm256.sys")
-local aux = require("ruboterm256.palette.xterm256.aux")
+local sys = require("ruboterm256.palette.xterm256.system")
+local aux = require("ruboterm256.palette.xterm256.auxiliary")
 
-vim.notify(sys.Black.x)
+vim.notify(sys.Black.hex)
 
 function M.setup()
 	local colors = {
-		bg = aux.Grey27.x,
-		fg = sys.Aqua.x,
-		red = sys.Red.x,
+		bg = aux.Grey27.hex,
+		fg = sys.Aqua.hex,
+		red = sys.Red.hex,
 	}
 
 	local highlights = {
