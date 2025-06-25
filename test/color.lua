@@ -6,5 +6,5 @@ local colors = {
 print(colors.Hello.hex)
 
 for k, v in pairs(colors) do
-	print(k)
+	print(k, v.hex)
 end
