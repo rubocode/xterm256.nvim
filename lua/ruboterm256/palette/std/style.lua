@@ -6,6 +6,7 @@ local M = {
 	italic = { text = "italic" },
 	bold = { text = "bold" },
 	underline = { text = "underline" },
+	reverse = { text = "reverse" },
 }
 
 return M
