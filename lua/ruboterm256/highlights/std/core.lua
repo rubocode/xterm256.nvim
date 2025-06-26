@@ -4,7 +4,7 @@ local duo = require("ruboterm256.palette.std.duo")
 local sty = require("ruboterm256.palette.std.style")
 
 local M = {
-	Normal = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	Normal = { fg = core.syntax_fg, bg = core.syntax_bg, style = sty.Empty },
 	bold = { fg = core.Empty, bg = core.Empty, style = sty.bold },
 	ColorColumn = { fg = core.Empty, bg = core.syntax_cursor_line, style = sty.Empty },
 	Conceal = { fg = core.Empty, bg = core.Empty, style = sty.Empty },
