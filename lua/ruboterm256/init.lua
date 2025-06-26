@@ -10,8 +10,8 @@ function M.setup()
 	--		Normal = { fg = colors.fg, bg = colors.bg },
 	--	}
 
-	for i, v in ipairs(core) do
-		print(i, v.name, v.fg, v.bg)
+	for group, opts in pairs(core) do
+		print(group, opts.fg.hex, opts.bg.hex)
 		--	vim.notify(color, color.i, color.hex)
 		--	vim.api.nvim_set_hl(0, group, opts)
 	end

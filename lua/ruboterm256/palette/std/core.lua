@@ -5,11 +5,12 @@ local d = require("ruboterm256.palette.std.duo")
 local t = require("ruboterm256.palette.std.terminal")
 
 local M = {
+	Empty = { i = 0, hex = "''" },
 	syntax_color_renamed = { i = 1, hex = "#33a0ff" },
 	syntax_color_added = { i = 2, hex = "#43d08a" },
 	syntax_color_modified = { i = 3, hex = "#e0c285" },
 	syntax_color_removed = { i = 4, hex = "#e05252" },
-	syntax_fg = { i = 5, hex = u.uno_2 },
+	syntax_fg = { i = 5, hex = u.uno_2.hex },
 	syntax_bg = { i = 6, hex = "#080808" },
 	syntax_accent = { i = 7, hex = "#56b6c2" },
 	syntax_gutter = { i = 8, hex = "#636d83" },
