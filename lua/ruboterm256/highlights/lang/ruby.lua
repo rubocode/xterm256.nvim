@@ -1,25 +1,38 @@
-" Ruby highlighting -------------------------------------------------------{{{
-  call <sid>X('rubyBlock',                     s:uno_2,         '', '')
-  call <sid>X('rubyBlockParameter',            s:uno_2,         '', '')
-  call <sid>X('rubyBlockParameterList',        s:uno_3,         '', '')
-  call <sid>X('rubyCapitalizedMethod',         s:duo_2,         '', '')
-  call <sid>X('rubyClass',                     s:duo_2,         '', '')
-  call <sid>X('rubyConstant',                  s:uno_3,         '', '')
-  call <sid>X('rubyControl',                   s:duo_2,         '', '')
-  call <sid>X('rubyConditionalModifier',       s:syntax_accent, '', '')
-  call <sid>X('rubyCurlyBlockDelimiter',       s:uno_4,         '', '')
-  call <sid>X('rubyDefine',                    s:duo_2,         '', '')
-  call <sid>X('rubyEscape',                    s:syntax_accent, '', '')
-  call <sid>X('rubyFunction',                  s:uno_1,         '', '')
-  call <sid>X('rubyGlobalVariable',            s:syntax_accent, '', '')
-  call <sid>X('rubyInclude',                   s:duo_2,         '', '')
-  call <sid>X('rubyIncluderubyGlobalVariable', s:syntax_accent, '', '')
-  call <sid>X('rubyInstanceVariable',          s:syntax_accent, '', '')
-  call <sid>X('rubyInterpolation',             s:duo_2,         '', '')
-  call <sid>X('rubyInterpolationDelimiter',    s:uno_4,         '', '')
-  call <sid>X('rubyModule',                    s:duo_2,         '', '')
-  call <sid>X('rubyRegexp',                    s:duo_1,         '', '')
-  call <sid>X('rubyRegexpDelimiter',           s:uno_4,         '', '')
-  call <sid>X('rubyStringDelimiter',           s:duo_3,         '', '')
-  call <sid>X('rubySymbol',                    s:duo_1,         '', '')
+-- Ruby Highlighting
+--
+local core = require("ruboterm256.palette.std.core")
+local uno = require("ruboterm256.palette.std.uno")
+local duo = require("ruboterm256.palette.std.duo")
+local sty = require("ruboterm256.palette.std.style")
 
+local M = {}
+
+M.CHANGES = {
+	rubyBlock = { fg = uno.uno_2, bg = core.Empty, style = sty.Empty },
+	rubyBlockParameter = { fg = uno.uno_2, bg = core.Empty, style = sty.Empty },
+	rubyBlockParameterList = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
+	rubyCapitalizedMethod = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	rubyClass = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	rubyConstant = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
+	rubyControl = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	rubyConditionalModifier = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+	rubyCurlyBlockDelimiter = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	rubyDefine = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	rubyEscape = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+	rubyFunction = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	rubyGlobalVariable = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+	rubyInclude = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	rubyIncluderubyGlobalVariable = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+	rubyInstanceVariable = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+	rubyInterpolation = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	rubyInterpolationDelimiter = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	rubyModule = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	rubyRegexp = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	rubyRegexpDelimiter = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	rubyStringDelimiter = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	rubySymbol = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+}
+
+M.LINKS = {}
+
+return M
