@@ -1,51 +1,68 @@
-" JavaScript highlighting -------------------------------------------------{{{
-  call <sid>X('coffeeString',           s:duo_2,         '', '')
+-- JavaScript Highlighting
+--
+local core = require("ruboterm256.palette.std.core")
+local uno = require("ruboterm256.palette.std.uno")
+local duo = require("ruboterm256.palette.std.duo")
+local sty = require("ruboterm256.palette.std.style")
 
-  call <sid>X('javaScriptBraces',       s:uno_3,         '', '')
-  call <sid>X('javaScriptFunction',     s:duo_3,         '', '')
-  call <sid>X('javaScriptIdentifier',   s:duo_3,         '', '')
-  call <sid>X('javaScriptNull',         s:uno_1,         '', '')
-  call <sid>X('javaScriptNumber',       s:uno_1,         '', '')
-  call <sid>X('javaScriptRequire',      s:duo_2,         '', '')
-  call <sid>X('javaScriptReserved',     s:duo_3,         '', '')
-  " https://github.com/pangloss/vim-javascript
-  call <sid>X('jsArrowFunction',        s:duo_3,         '', '')
-  call <sid>X('jsClassKeywords',        s:duo_3,         '', '')
-  call <sid>X('jsDocParam',             s:duo_2,         '', '')
-  call <sid>X('jsDocTags',              s:duo_3,         '', '')
-  call <sid>X('jsFuncCall',             s:uno_1,         '', '')
-  call <sid>X('jsFunction',             s:duo_3,         '', '')
-  call <sid>X('jsGlobalObjects',        s:uno_1,         '', '')
-  call <sid>X('jsModuleWords',          s:duo_3,         '', '')
-  call <sid>X('jsModules',              s:duo_3,         '', '')
-  call <sid>X('jsNoise',                s:uno_3,         '', '')
-  call <sid>X('jsNull',                 s:uno_1,         '', '')
-  call <sid>X('jsOperator',             s:duo_2,         '', '')
-  call <sid>X('jsObjectBraces',         s:uno_3,         '', '')
-  call <sid>X('jsBrackets',             s:uno_3,         '', '')
-  call <sid>X('jsParens',               s:uno_3,         '', '')
-  call <sid>X('jsStorageClass',         s:duo_1,         '', '')
-  call <sid>X('jsTemplateBraces',       s:syntax_accent, '', '')
-  call <sid>X('jsTemplateVar',          s:duo_2,         '', '')
-  call <sid>X('jsThis',                 s:syntax_accent, '', '')
-  call <sid>X('jsUndefined',            s:uno_1,         '', '')
-  " https://github.com/othree/yajs.vim
-  call <sid>X('javascriptArrowFunc',    s:duo_3,         '', '')
-  call <sid>X('javascriptClassExtends', s:duo_3,         '', '')
-  call <sid>X('javascriptClassKeyword', s:duo_3,         '', '')
-  call <sid>X('javascriptDocNotation',  s:duo_3,         '', '')
-  call <sid>X('javascriptDocParamName', s:duo_2,         '', '')
-  call <sid>X('javascriptDocTags',      s:duo_3,         '', '')
-  call <sid>X('javascriptEndColons',    s:uno_3,         '', '')
-  call <sid>X('javascriptExport',       s:duo_3,         '', '')
-  call <sid>X('javascriptFuncArg',      s:uno_1,         '', '')
-  call <sid>X('javascriptFuncKeyword',  s:duo_3,         '', '')
-  call <sid>X('javascriptIdentifier',   s:syntax_accent, '', '')
-  call <sid>X('javascriptImport',       s:duo_3,         '', '')
-  call <sid>X('javascriptObjectLabel',  s:uno_1,         '', '')
-  call <sid>X('javascriptOpSymbol',     s:duo_2,         '', '')
-  call <sid>X('javascriptOpSymbols',    s:duo_2,         '', '')
-  call <sid>X('javascriptPropertyName', s:duo_2,         '', '')
-  call <sid>X('javascriptTemplateSB',   s:syntax_accent, '', '')
-  call <sid>X('javascriptVariable',     s:duo_3,         '', '')
+local M = {}
 
+M.ADDITIONS = {
+	coffeeString = { fg = duo.duo_2, "", style = sty.Empty },
+
+	javaScriptBraces = { fg = uno.uno_3, "", style = sty.Empty },
+	javaScriptFunction = { fg = duo.duo_3, "", style = sty.Empty },
+	javaScriptIdentifier = { fg = duo.duo_3, "", style = sty.Empty },
+	javaScriptNull = { fg = uno.uno_1, "", style = sty.Empty },
+	javaScriptNumber = { fg = uno.uno_1, "", style = sty.Empty },
+	javaScriptRequire = { fg = duo.duo_2, "", style = sty.Empty },
+	javaScriptReserved = { fg = duo.duo_3, "", style = sty.Empty },
+
+	-- httpcore.//github.com/pangloss/vim-javascript
+	--
+	jsArrowFunction = { fg = duo.duo_3, "", style = sty.Empty },
+	jsClassKeywords = { fg = duo.duo_3, "", style = sty.Empty },
+	jsDocParam = { fg = duo.duo_2, "", style = sty.Empty },
+	jsDocTags = { fg = duo.duo_3, "", style = sty.Empty },
+	jsFuncCall = { fg = uno.uno_1, "", style = sty.Empty },
+	jsFunction = { fg = duo.duo_3, "", style = sty.Empty },
+	jsGlobalObjects = { fg = uno.uno_1, "", style = sty.Empty },
+	jsModuleWords = { fg = duo.duo_3, "", style = sty.Empty },
+	jsModules = { fg = duo.duo_3, "", style = sty.Empty },
+	jsNoise = { fg = uno.uno_3, "", style = sty.Empty },
+	jsNull = { fg = uno.uno_1, "", style = sty.Empty },
+	jsOperator = { fg = duo.duo_2, "", style = sty.Empty },
+	jsObjectBraces = { fg = uno.uno_3, "", style = sty.Empty },
+	jsBrackets = { fg = uno.uno_3, "", style = sty.Empty },
+	jsParens = { fg = uno.uno_3, "", style = sty.Empty },
+	jsStorageClass = { fg = duo.duo_1, "", style = sty.Empty },
+	jsTemplateBraces = { fg = core.syntax_accent, "", style = sty.Empty },
+	jsTemplateVar = { fg = duo.duo_2, "", style = sty.Empty },
+	jsThis = { fg = core.syntax_accent, "", style = sty.Empty },
+	jsUndefined = { fg = uno.uno_1, "", style = sty.Empty },
+
+	-- httpcore.//github.com/othree/yajs.vim
+	--
+	javascriptArrowFunc = { fg = duo.duo_3, "", style = sty.Empty },
+	javascriptClassExtends = { fg = duo.duo_3, "", style = sty.Empty },
+	javascriptClassKeyword = { fg = duo.duo_3, "", style = sty.Empty },
+	javascriptDocNotation = { fg = duo.duo_3, "", style = sty.Empty },
+	javascriptDocParamName = { fg = duo.duo_2, "", style = sty.Empty },
+	javascriptDocTags = { fg = duo.duo_3, "", style = sty.Empty },
+	javascriptEndColons = { fg = uno.uno_3, "", style = sty.Empty },
+	javascriptExport = { fg = duo.duo_3, "", style = sty.Empty },
+	javascriptFuncArg = { fg = uno.uno_1, "", style = sty.Empty },
+	javascriptFuncKeyword = { fg = duo.duo_3, "", style = sty.Empty },
+	javascriptIdentifier = { fg = core.syntax_accent, "", style = sty.Empty },
+	javascriptImport = { fg = duo.duo_3, "", style = sty.Empty },
+	javascriptObjectLabel = { fg = uno.uno_1, "", style = sty.Empty },
+	javascriptOpSymbol = { fg = duo.duo_2, "", style = sty.Empty },
+	javascriptOpSymbols = { fg = duo.duo_2, "", style = sty.Empty },
+	javascriptPropertyName = { fg = duo.duo_2, "", style = sty.Empty },
+	javascriptTemplateSB = { fg = core.syntax_accent, "", style = sty.Empty },
+	javascriptVariable = { fg = duo.duo_3, "", style = sty.Empty },
+}
+
+M.LINKS = {}
+
+return M
