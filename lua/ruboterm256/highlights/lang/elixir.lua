@@ -1,13 +1,22 @@
-" Elixir highlighting------------------------------------------------------{{{
-  "call <sid>X('elixirAtom',              s:syntax_accent, '', '')
-  "call <sid>X('elixirAlias',             s:duo_1,         '', '')
-  call <sid>X('elixirBlock',             s:uno_3,         '', '')
-  "call <sid>X('elixirBlockDefinition',   s:duo_2,         '', '')
-  "call <sid>X('elixirInclude',           s:duo_2,         '', '')
-  call <sid>X('elixirId',                s:uno_2,         '', '')
-  call <sid>X('elixirModuleDeclaration', s:uno_1,         '', '')
-  "call <sid>X('elixirModuleDefine',      s:duo_2,         '', '')
-  "call <sid>X('elixirOperator',          s:uno_3,         '', '')
-  "call <sid>X('elixirSigil',             s:uno_4,         '', '')
-  "call <sid>X('elixirVariable',          s:duo_2,         '', '')
+-- Elixir Highlighting
+--
+local core = require("ruboterm256.palette.std.core")
+local uno = require("ruboterm256.palette.std.uno")
+local duo = require("ruboterm256.palette.std.duo")
+local sty = require("ruboterm256.palette.std.style")
 
+local M = {
+	elixirAtom = { fg = core.syntax_accent, "", style = sty.Empty },
+	elixirAlias = { fg = duo.duo_1, "", style = sty.Empty },
+	elixirBlock = { fg = uno.uno_3, "", style = sty.Empty },
+	elixirBlockDefinition = { fg = duo.duo_2, "", style = sty.Empty },
+	elixirInclude = { fg = duo.duo_2, "", style = sty.Empty },
+	elixirId = { fg = uno.uno_2, "", style = sty.Empty },
+	elixirModuleDeclaration = { fg = uno.uno_1, "", style = sty.Empty },
+	elixirModuleDefine = { fg = duo.duo_2, "", style = sty.Empty },
+	elixirOperator = { fg = uno.uno_3, "", style = sty.Empty },
+	elixirSigil = { fg = uno.uno_4, "", style = sty.Empty },
+	elixirVariable = { fg = duo.duo_2, "", style = sty.Empty },
+}
+
+return M
