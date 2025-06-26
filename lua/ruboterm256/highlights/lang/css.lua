@@ -1,34 +1,42 @@
-" CSS/Sass highlighting ---------------------------------------------------{{{
-  call <sid>X('cssAttrComma',           s:duo_3,         '', '')
-  call <sid>X('cssAttributeSelector',   s:duo_2,         '', '')
-  call <sid>X('cssBraces',              s:uno_4,         '', '')
-  call <sid>X('cssClassName',           s:uno_1,         '', '')
-  call <sid>X('cssClassNameDot',        s:uno_1,         '', '')
-  call <sid>X('cssDefinition',          s:duo_3,         '', '')
-  call <sid>X('cssFlexibleBoxAttr',     s:duo_1,         '', '')
-  call <sid>X('cssBorderAttr',          s:duo_1,         '', '')
-  call <sid>X('cssPositioningAttr',     s:duo_1,         '', '')
-  call <sid>X('cssTransitionAttr',      s:duo_1,         '', '')
-  call <sid>X('cssCommonAttr',          s:duo_1,         '', '')
-  call <sid>X('cssBoxAttr',             s:duo_1,         '', '')
-  call <sid>X('cssFontAttr',            s:duo_1,         '', '')
-  call <sid>X('cssTextAttr',            s:duo_1,         '', '')
-  call <sid>X('cssFontDescriptor',      s:uno_1,         '', '')
-  call <sid>X('cssFunctionName',        s:uno_3,         '', '')
-  call <sid>X('cssIdentifier',          s:duo_1,         '', '')
-  call <sid>X('cssImportant',           s:duo_1,         '', '')
-  call <sid>X('cssUnitDecorators',      s:duo_2,         '', '')
-  call <sid>X('cssInclude',             s:uno_1,         '', '')
-  call <sid>X('cssIncludeKeyword',      s:duo_3,         '', '')
-  call <sid>X('cssMediaType',           s:uno_1,         '', '')
-  call <sid>X('cssProp',                s:uno_3,         '', '')
-  call <sid>X('cssPseudoClassId',       s:uno_1,         '', '')
-  call <sid>X('cssSelectorOp',          s:duo_3,         '', '')
-  call <sid>X('cssSelectorOp2',         s:duo_3,         '', '')
-  call <sid>X('cssStringQ',             s:duo_1,         '', '')
-  call <sid>X('cssStringQQ',            s:duo_1,         '', '')
-  call <sid>X('cssTagName',             s:uno_1,         '', '')
-  call <sid>X('cssClassNameDot',        s:uno_4,         '', '')
-  call <sid>X('cssValueNumber',         s:duo_1,         '', '')
+-- CSS/Sass Highlighting
+--
+local core = require("ruboterm256.palette.std.core")
+local uno = require("ruboterm256.palette.std.uno")
+local duo = require("ruboterm256.palette.std.duo")
+local sty = require("ruboterm256.palette.std.style")
 
+local M = {
+	cssAttrComma = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	cssAttributeSelector = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	cssBraces = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	cssClassName = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	-- cssClassNameDot = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	cssDefinition = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	cssFlexibleBoxAttr = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssBorderAttr = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssPositioningAttr = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssTransitionAttr = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssCommonAttr = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssBoxAttr = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssFontAttr = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssTextAttr = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssFontDescriptor = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	cssFunctionName = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
+	cssIdentifier = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssImportant = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssUnitDecorators = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	cssInclude = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	cssIncludeKeyword = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	cssMediaType = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	cssProp = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
+	cssPseudoClassId = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	cssSelectorOp = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	cssSelectorOp2 = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	cssStringQ = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssStringQQ = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	cssTagName = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	cssClassNameDot = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	cssValueNumber = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+}
 
+return M
