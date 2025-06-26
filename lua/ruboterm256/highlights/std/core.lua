@@ -1,0 +1,50 @@
+local core = require("ruboterm256.palette.std.core")
+local uno = require("ruboterm256.palette.std.uno")
+local duo = require("ruboterm256.palette.std.duo")
+local sty = require("ruboterm256.palette.std.style")
+
+local M = {
+	Normal = { fg = uno.uno_4, bg = nil, style = nil },
+	bold = { nil, nil, sty.bold },
+	ColorColumn = { nil, core.syntax_cursor_line, nil },
+	Conceal = { nil, nil, nil },
+	Cursor = { core.syntax_bg, core.syntax_accent, nil },
+	CursorIM = { nil, nil, nil },
+	CursorColumn = { nil, core.syntax_cursor_line, nil },
+	CursorLine = { nil, core.syntax_cursor_line, nil },
+	Directory = { uno.uno_1, nil, nil },
+	ErrorMsg = { core.syntax_color_removed, core.syntax_bg, sty.none },
+	VertSplit = { core.syntax_fold_bg, nil, sty.none },
+	Folded = { core.syntax_bg, core.syntax_fold_bg, nil },
+	FoldColumn = { uno.uno_3, core.syntax_cursor_line, nil },
+	IncSearch = { core.syntax_bg, uno.uno_4, nil },
+	LineNr = { core.syntax_fold_bg, nil, nil },
+	CursorLineNr = { uno.uno_2, nil, sty.none },
+	MatchParen = { core.syntax_bg, core.syntax_accent, nil },
+	Italic = { nil, nil, sty.italic },
+	ModeMsg = { core.syntax_color_added, nil, nil },
+	MoreMsg = { core.syntax_fg, nil, nil },
+	NonText = { uno.uno_4, nil, nil },
+	PMenu = { nil, core.syntax_selection, nil },
+	PMenuSel = { nil, core.syntax_bg, nil },
+	PMenuSbar = { nil, core.syntax_bg, nil },
+	PMenuThumb = { nil, uno.uno_1, nil },
+	Question = { core.syntax_accent, nil, nil },
+	Search = { core.syntax_bg, uno.uno_4, nil },
+	SpecialKey = { core.syntax_fold_bg, nil, nil },
+	StatusLine = { core.syntax_fg, core.syntax_cursor_line, sty.none },
+	StatusLineNC = { uno.uno_4, nil, nil },
+	TabLine = { uno.uno_4, nil, nil },
+	TabLineFill = { nil, nil, sty.none },
+	TabLineSel = { core.syntax_fg, nil, nil },
+	Title = { duo.duo_2, nil, sty.bold },
+	Visual = { nil, core.syntax_selection, nil },
+	VisualNOS = { nil, core.syntax_selection, nil },
+	WarningMsg = { core.syntax_accent, nil, nil },
+	TooLong = { core.syntax_accent, nil, nil },
+	WildMenu = { core.syntax_fg, uno.uno_4, nil },
+	SignColumn = { nil, uno.uno_4, nil },
+	Special = { duo.duo_2, nil, nil },
+}
+
+return M

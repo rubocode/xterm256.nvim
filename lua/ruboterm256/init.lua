@@ -1,23 +1,17 @@
 local M = {}
 
-local sys = require("ruboterm256.palette.xterm256.system")
-local aux = require("ruboterm256.palette.xterm256.auxiliary")
+-- local sys = require("ruboterm256.palette.xterm256.system")
+-- local aux = require("ruboterm256.palette.xterm256.auxiliary")
 
-vim.notify(sys.Black.hex)
+local core = require("ruboterm256.highlights.std.core")
 
 function M.setup()
-	local colors = {
-		bg = aux.Grey27.hex,
-		fg = sys.Aqua.hex,
-		red = sys.Red.hex,
-	}
+	--	local highlights = {
+	--		Normal = { fg = colors.fg, bg = colors.bg },
+	--	}
 
-	local highlights = {
-		Normal = { fg = colors.fg, bg = colors.bg },
-	}
-
-	for k, v in pairs(sys) do
-		print(k, v.i)
+	for i, v in ipairs(core) do
+		print(i, v.name, v.fg, v.bg)
 		--	vim.notify(color, color.i, color.hex)
 		--	vim.api.nvim_set_hl(0, group, opts)
 	end
