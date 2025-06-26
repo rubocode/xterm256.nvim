@@ -1,9 +1,21 @@
- " HTML highlighting -------------------------------------------------------{{{
-  call <sid>X('htmlArg',            s:uno_2, '', '')
-  call <sid>X('htmlTagName',        s:uno_1, '', '')
-  call <sid>X('htmlSpecialTagName', s:uno_1, '', '')
-  call <sid>X('htmlTag',            s:uno_3, '', '')
+-- HTML Highlighting
+--
+local core = require("ruboterm256.palette.std.core")
+local uno = require("ruboterm256.palette.std.uno")
+local duo = require("ruboterm256.palette.std.duo")
+local sty = require("ruboterm256.palette.std.style")
 
-  call <sid>X('liquidDelimiter',    s:uno_4, '', '')
-  call <sid>X('liquidKeyword',      s:uno_3, '', '')
+local M = {}
 
+M.ADDITIONS = {
+	htmlArg = { fg = uno.uno_2, bg = core.Empty, style = sty.Empty },
+	htmlTagName = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	htmlSpecialTagName = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	htmlTag = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
+	liquidDelimiter = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	liquidKeyword = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
+}
+
+M.LINKS = {}
+
+return M
