@@ -12,12 +12,23 @@ function M.setup()
 
 	for k, v in pairs(core) do
 		local group = k
-		local f, b, s = v.fg.hex, v.bg.hex, v.style.text
-		-- print(group, f, b, s)
+		-- local f, b, s = v.fg.hex, v.bg.hex, v.style.text
+		print(group, v)
 		-- vim.notify(color, color.i, color.hex)
 		if group == "Normal" then
-			print(group, f, b, s)
-			vim.api.nvim_set_hl(0, group, { fg = f, bg = b })
+			print(group, k, v.fg, v.bg, v.style)
+			if v.fg then
+				print(group, ": fg: ", v.fg.i, v.fg.hex)
+				vim.api.nvim_set_hl(0, group, { fg = v.fg.hex, ctermfg = v.fg.i })
+			end
+			if v.bg then
+				print(group, ": bg: ", v.bg.i, v.bg.hex)
+				vim.api.nvim_set_hl(0, group, { bg = v.bg.hex, ctermbg = v.bg.i })
+			end
+			if v.style then
+				print(group, ": style: ", v.style.text)
+				-- vim.api.nvim_set_hl(0, group, { v.style.text = true, cterm = v.style.text})
+			end
 		end
 	end
 end

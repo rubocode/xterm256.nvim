@@ -11,7 +11,7 @@ local M = {
 	syntax_color_modified = { i = 3, hex = "#e0c285" },
 	syntax_color_removed = { i = 4, hex = "#e05252" },
 	syntax_fg = { i = 5, hex = sys.White.hex }, -- uno.uno_2.hex },
-	syntax_bg = { i = 6, hex = 0 },
+	syntax_bg = sys.Black,
 	syntax_accent = { i = 7, hex = "#56b6c2" },
 	syntax_gutter = { i = 8, hex = "#636d83" },
 	syntax_selection = { i = 9, hex = "#dddddd" },
