@@ -5,7 +5,7 @@ local d = require("ruboterm256.palette.std.duo")
 local t = require("ruboterm256.palette.std.terminal")
 
 local M = {
-	Empty = { i = 0, hex = "''" },
+	Empty = { i = 0, hex = "" },
 	syntax_color_renamed = { i = 1, hex = "#33a0ff" },
 	syntax_color_added = { i = 2, hex = "#43d08a" },
 	syntax_color_modified = { i = 3, hex = "#e0c285" },
