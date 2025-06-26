@@ -5,7 +5,9 @@ local uno = require("ruboterm256.palette.std.uno")
 local duo = require("ruboterm256.palette.std.duo")
 local sty = require("ruboterm256.palette.std.style")
 
-local M = {
+local M = {}
+
+M.CHANGES = {
 	cucumberGiven = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
 	cucumberWhen = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
 	cucumberWhenAnd = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
@@ -19,5 +21,7 @@ local M = {
 	cucumberTags = { fg = uno.uno_4, bg = core.Empty, style = sty.bold },
 	cucumberDelimiter = { fg = uno.uno_4, bg = core.Empty, style = sty.bold },
 }
+
+M.LINKS = {}
 
 return M

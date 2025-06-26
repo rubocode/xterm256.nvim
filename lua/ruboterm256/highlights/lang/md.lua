@@ -1,16 +1,29 @@
-" Markdown highlighting ---------------------------------------------------{{{
-  call <sid>X('markdownUrl',              s:duo_3, '', '')
-  call <sid>X('markdownCode',             s:duo_1, '', '')
-  call <sid>X('markdownHeadingDelimiter', s:duo_3, '', '')
-  call <sid>X('markdownListMarker',       s:duo_3, '', '')
+-- Markdown Highlighting
+--
+local core = require("ruboterm256.palette.std.core")
+local uno = require("ruboterm256.palette.std.uno")
+local duo = require("ruboterm256.palette.std.duo")
+local sty = require("ruboterm256.palette.std.style")
 
-  call <sid>X('mkdCode',                  s:duo_1, '', '')
-  call <sid>X('mkdDelimiter',             s:uno_3, '', '')
-  call <sid>X('mkdLink',                  s:duo_1, '', '')
-  call <sid>X('mkdLinkDef',               s:duo_1, '', '')
-  call <sid>X('mkdLinkDefTarget',         s:duo_1, '', 'underline')
-  call <sid>X('mkdURL',                   s:duo_1, '', 'underline')
+local M = {}
 
-  call <sid>X('htmlBold',                 s:uno_2, '', 'bold')
-  call <sid>X('htmlItalic',               s:uno_2, '', 'italic')
+M.CHANGES = {
+	markdownUrl = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	markdownCode = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	markdownHeadingDelimiter = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	markdownListMarker = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
 
+	mkdCode = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	mkdDelimiter = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
+	mkdLink = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	mkdLinkDef = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	mkdLinkDefTarget = { fg = duo.duo_1, bg = core.Empty, style = sty.underline },
+	mkdURL = { fg = duo.duo_1, bg = core.Empty, style = sty.underline },
+
+	htmlBold = { fg = uno.uno_2, bg = core.Empty, style = sty.bold },
+	htmlItalic = { fg = uno.uno_2, bg = core.Empty, style = sty.italic },
+}
+
+M.LINKS = {}
+
+return M

@@ -7,7 +7,7 @@ local sty = require("ruboterm256.palette.std.style")
 
 local M = {}
 
-M.ADDITIONS = {
+M.CHANGES = {
 	jsonCommentError = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
 	jsonKeyword = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
 	jsonQuote = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },

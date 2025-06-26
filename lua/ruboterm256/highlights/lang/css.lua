@@ -5,7 +5,9 @@ local uno = require("ruboterm256.palette.std.uno")
 local duo = require("ruboterm256.palette.std.duo")
 local sty = require("ruboterm256.palette.std.style")
 
-local M = {
+local M = {}
+
+M.CHANGES = {
 	cssAttrComma = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
 	cssAttributeSelector = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
 	cssBraces = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
@@ -38,5 +40,7 @@ local M = {
 	cssClassNameDot = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
 	cssValueNumber = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
 }
+
+M.LINKS = {}
 
 return M

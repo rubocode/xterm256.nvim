@@ -5,7 +5,9 @@ local uno = require("ruboterm256.palette.std.uno")
 local duo = require("ruboterm256.palette.std.duo")
 local sty = require("ruboterm256.palette.std.style")
 
-local M = {
+local M = {}
+
+M.CHANGES = {
 	DiffAdd = { fg = core.syntax_color_added, bg = core.syntax_selection, style = sty.Empty },
 	DiffChange = { fg = core.syntax_color_modified, bg = core.syntax_selection, style = sty.Empty },
 	DiffDelete = { fg = core.syntax_color_removed, bg = core.syntax_selection, style = sty.Empty },
@@ -16,5 +18,7 @@ local M = {
 	DiffLine = { fg = uno.uno_2, bg = core.syntax_selection, style = sty.Empty },
 	DiffRemoved = { fg = core.syntax_accent, bg = core.syntax_selection, style = sty.Empty },
 }
+
+M.LINKS = {}
 
 return M

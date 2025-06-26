@@ -7,7 +7,7 @@ local sty = require("ruboterm256.palette.std.style")
 
 local M = {}
 
-M.ADDITIONS = {
+M.CHNAGES = {
 	coffeeString = { fg = duo.duo_2, "", style = sty.Empty },
 
 	javaScriptBraces = { fg = uno.uno_3, "", style = sty.Empty },

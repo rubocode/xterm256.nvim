@@ -7,7 +7,7 @@ local sty = require("ruboterm256.palette.std.style")
 
 local M = {}
 
-M.ADDITIONS = {
+M.CHANGES = {
 	htmlArg = { fg = uno.uno_2, bg = core.Empty, style = sty.Empty },
 	htmlTagName = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
 	htmlSpecialTagName = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
