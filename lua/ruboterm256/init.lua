@@ -11,7 +11,8 @@ function M.setup()
 	--	}
 
 	for group, opts in pairs(core) do
-		print(group, opts.fg.hex, opts.bg.hex)
+		print(group, "\t")
+		print(group, opts.fg.hex, opts.bg.hex, opts.style.text)
 		--	vim.notify(color, color.i, color.hex)
 		--	vim.api.nvim_set_hl(0, group, opts)
 	end

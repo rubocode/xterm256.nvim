@@ -41,10 +41,10 @@ local M = {
 	Visual = { fg = core.Empty, bg = core.syntax_selection, style = sty.Empty },
 	VisualNOS = { fg = core.Empty, bg = core.syntax_selection, style = sty.Empty },
 	WarningMsg = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
-	TooLong = { fg = core.syntax_accent, bg = core.Empty, nil },
-	WildMenu = { fg = core.syntax_fg, bg = uno.uno_4, nil },
-	SignColumn = { fg = core.Empty, bg = uno.uno_4, nil },
-	Special = { fg = duo.duo_2, bg = core.Empty, nil },
+	TooLong = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+	WildMenu = { fg = core.syntax_fg, bg = uno.uno_4, style = sty.Empty },
+	SignColumn = { fg = core.Empty, bg = uno.uno_4, style = sty.Empty },
+	Special = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
 }
 
 return M
