@@ -1,11 +1,24 @@
- " Vim editor color --------------------------------------------------------{{{
-  	 " Vim highlighting --------------------------------------------------------{{{
-  "call <sid>X('vimCommentTitle', s:uno_4, '', 'bold')
-  call <sid>X('vimCommand',      s:uno_1, '', '')
-  call <sid>X('vimVar',          s:duo_2, '', '')
-  call <sid>X('vimEnvVar',       s:duo_3, '', '')
+-- Vim Highlights
+--
+local core = require("ruboterm256.palette.std.core")
+local uno = require("ruboterm256.palette.std.uno")
+local duo = require("ruboterm256.palette.std.duo")
+local sty = require("ruboterm256.palette.std.style")
 
-  " Vim Help highlights
-  call <sid>X('helpHyperTextJump', s:duo_1, '', '')
-  call <sid>X('helpSpecial',       s:duo_2, '', '')
+local M = {}
 
+M.CHANGES = {
+	-- Vim highlighting
+	-- vimCommentTitle = { fg = uno.uno_4, bg = core.Empty, 'bold')
+	vimCommand = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	vimVar = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	vimEnvVar = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+
+	-- Vim Help highlights
+	helpHyperTextJump = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
+	helpSpecial = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+}
+
+M.LINKS = {}
+
+return M
