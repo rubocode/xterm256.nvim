@@ -1,9 +1,11 @@
 -- DUO COLORS
 --
+local aux = require("ruboterm256.palette.xterm256.auxiliary")
+
 local M = {
-	duo_1 = { i = 1, hex = "#c8ae9d" },
-	duo_2 = { i = 2, hex = "#e06c75" },
-	duo_3 = { i = 3, hex = "#dd672c" },
+	duo_1 = aux.DodgerBlue, -- "#c8ae9d"
+	duo_2 = aux.Grey89, -- "#e06c75"
+	duo_3 = aux.Grey85, -- "#dd672c"
 }
 
 return M

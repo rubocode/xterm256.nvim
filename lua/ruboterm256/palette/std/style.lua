@@ -1,8 +1,7 @@
 -- Character Style
 --
 local M = {
-	Empty = { text = "" },
-	none = { text = "none" },
+	default = { text = "default" },
 	italic = { text = "italic" },
 	bold = { text = "bold" },
 	underline = { text = "underline" },
