@@ -1,29 +1,43 @@
-" Git and git related plugins highlighting --------------------------------{{{
-  call <sid>X('gitcommitComment',       s:uno_4,         '', '')
-  call <sid>X('gitcommitUnmerged',      s:duo_2,         '', '')
-  call <sid>X('gitcommitOnBranch',      '',              '', '')
-  call <sid>X('gitcommitBranch',        s:duo_3,         '', '')
-  call <sid>X('gitcommitDiscardedType', s:syntax_accent, '', '')
-  call <sid>X('gitcommitSelectedType',  s:duo_2,         '', '')
-  call <sid>X('gitcommitHeader',        '',              '', '')
-  call <sid>X('gitcommitUntrackedFile', s:duo_2,         '', '')
-  call <sid>X('gitcommitDiscardedFile', s:syntax_accent, '', '')
-  call <sid>X('gitcommitSelectedFile',  s:duo_2,         '', '')
-  call <sid>X('gitcommitUnmergedFile',  s:uno_1,         '', '')
-  call <sid>X('gitcommitFile',          '',              '', '')
-  hi link gitcommitNoBranch       gitcommitBranch
-  hi link gitcommitUntracked      gitcommitComment
-  hi link gitcommitDiscarded      gitcommitComment
-  hi link gitcommitSelected       gitcommitComment
-  hi link gitcommitDiscardedArrow gitcommitDiscardedFile
-  hi link gitcommitSelectedArrow  gitcommitSelectedFile
-  hi link gitcommitUnmergedArrow  gitcommitUnmergedFile
- call <sid>X('SignifySignAdd',    s:duo_2,         '', '')
-  call <sid>X('SignifySignChange', s:uno_1,         '', '')
-  call <sid>X('SignifySignDelete', s:syntax_accent, '', '')
-  hi link GitGutterAdd    SignifySignAdd
-  hi link GitGutterChange SignifySignChange
-  hi link GitGutterDelete SignifySignDelete
-  call <sid>X('diffAdded',   s:duo_2,         '', '')
-  call <sid>X('diffRemoved', s:syntax_accent, '', '')
+-- Git and git related plugins highlighting
+--
+local core = require("ruboterm256.palette.std.core")
+local uno = require("ruboterm256.palette.std.uno")
+local duo = require("ruboterm256.palette.std.duo")
+local sty = require("ruboterm256.palette.std.style")
 
+local M = {}
+
+M.CHANGES = {
+	gitcommitComment = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	gitcommitUnmerged = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	gitcommitOnBranch = { fg = core.Empty, bg = core.Empty, style = sty.Empty },
+	gitcommitBranch = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	gitcommitDiscardedType = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+	gitcommitSelectedType = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	gitcommitHeader = { fg = core.Empty, bg = core.Empty, style = sty.Empty },
+	gitcommitUntrackedFile = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	gitcommitDiscardedFile = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+	gitcommitSelectedFile = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	gitcommitUnmergedFile = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	gitcommitFile = { fg = core.Empty, bg = core.Empty, style = sty.Empty },
+	SignifySignAdd = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	SignifySignChange = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
+	SignifySignDelete = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+	diffAdded = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	diffRemoved = { fg = core.syntax_accent, bg = core.Empty, style = sty.Empty },
+}
+
+M.LINKS = {
+	gitcommitNoBranch = { link_to = "gitcommitBranch" },
+	gitcommitUntracked = { link_to = "gitcommitComment" },
+	gitcommitDiscarded = { link_to = "gitcommitComment" },
+	gitcommitSelected = { link_to = "gitcommitComment" },
+	gitcommitDiscardedArrow = { link_to = "gitcommitDiscardedFile" },
+	gitcommitSelectedArrow = { link_to = "gitcommitSelectedFile" },
+	gitcommitUnmergedArrow = { link_to = "gitcommitUnmergedFile" },
+
+	GitGutterAdd = { link_to = "SignifySignAdd" },
+	GitGutterChange = { link_to = "SignifySignChange" },
+}
+
+return M
