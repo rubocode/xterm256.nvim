@@ -6,7 +6,9 @@ local uno = require("xterm256.palette.std.uno")
 local duo = require("xterm256.palette.std.duo")
 local sty = require("xterm256.palette.std.style")
 
-local M = {
+local M = {}
+
+M.CHANGES = {
 	Comment = { fg = uno.uno_4, bg = core.Empty, style = sty.italic },
 	Constant = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
 	String = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
@@ -43,5 +45,7 @@ local M = {
 	Error = { fg = core.syntax_color_removed, bg = core.syntax_bg, style = sty.bold },
 	Todo = { fg = core.syntax_color_added, bg = core.syntax_bg, style = sty.Empty },
 }
+
+M.LINKS = {}
 
 return M

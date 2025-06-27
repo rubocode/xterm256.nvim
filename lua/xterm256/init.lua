@@ -4,6 +4,7 @@ local M = {}
 -- local aux = require("ruboterm256.palette.xterm256.auxiliary")
 
 local core = require("xterm256.highlights.std.core")
+
 local sty = require("xterm256.palette.std.style")
 
 function M.setup()
@@ -11,7 +12,7 @@ function M.setup()
 	--		Normal = { fg = colors.fg, bg = colors.bg },
 	--	}
 
-	for k, v in pairs(core) do
+	for k, v in pairs(core.CHANGES) do
 		local group = k
 		-- print(group, v)
 		-- if group == "Normal" then

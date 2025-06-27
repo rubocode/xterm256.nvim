@@ -6,7 +6,9 @@ local uno = require("xterm256.palette.std.uno")
 local duo = require("xterm256.palette.std.duo")
 local sty = require("xterm256.palette.std.style")
 
-local M = {
+local M = {}
+
+M.CHANGES = {
 	Normal = { fg = core.syntax_fg, bg = core.syntax_bg, style = nil },
 	bold = { fg = nil, bg = core.Empty, style = sty.bold },
 	ColorColumn = { fg = nil, bg = core.syntax_cursor_line, style = nil },
@@ -49,5 +51,7 @@ local M = {
 	SignColumn = { fg = nil, bg = uno.uno_4, style = nil },
 	Special = { fg = duo.duo_2, bg = nil, style = nil },
 }
+
+M.LINKS = {}
 
 return M
