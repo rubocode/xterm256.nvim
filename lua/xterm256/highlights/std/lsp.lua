@@ -1,0 +1,2 @@
+-- language server protocol highlight groups
+--
