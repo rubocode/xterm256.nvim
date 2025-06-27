@@ -1,10 +1,10 @@
 -- core highlight groups
 --
 
-local core = require("ruboterm256.palette.std.core")
-local uno = require("ruboterm256.palette.std.uno")
-local duo = require("ruboterm256.palette.std.duo")
-local sty = require("ruboterm256.palette.std.style")
+local core = require("xterm256.palette.std.core")
+local uno = require("xterm256.palette.std.uno")
+local duo = require("xterm256.palette.std.duo")
+local sty = require("xterm256.palette.std.style")
 
 local M = {
 	Normal = { fg = core.syntax_fg, bg = core.syntax_bg, style = nil },

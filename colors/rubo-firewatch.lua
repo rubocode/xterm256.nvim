@@ -1,1 +1,1 @@
-require("ruboterm256").setup()
+require("xterm256").setup()
