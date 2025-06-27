@@ -8,11 +8,14 @@ function M.setup()
 	for k, v in pairs(core.CHANGES) do
 		local group = k
 		-- print(group, v)
-		-- if group == "Normal" then
+		if group == "Directory" then
+			print("--------")
+			print(k, v.fg, v.bg, v.style)
+		end
 		-- print(group, k, v.fg, v.bg, v.style)
 		if v.fg then
 			vim.notify(group .. ": fg: " .. v.fg.i .. " " .. v.fg.hex)
-			vim.api.nvim_set_hl(0, group, { fg = v.fg.hex, ctermfg = v.fg.i })
+			vim.api.nvim_set_hl(0, group, { fg = Grey54, ctermfg = v.fg.i })
 		end
 		if v.bg then
 			vim.notify(group .. " bg: " .. v.bg.i .. " " .. v.bg.hex)
