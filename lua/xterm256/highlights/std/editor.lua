@@ -18,7 +18,7 @@ M.CHANGES = {
 	CursorLine = { fg = nil, bg = core.syntax_cursor_line, style = nil },
 	Directory = { fg = uno.uno_1, bg = nil, style = nil },
 	ErrorMsg = { fg = core.syntax_color_removed, bg = core.syntax_bg, style = nil },
-	VertSplit = { fg = core.syntax_fold_bg, bg = nil, style = sty.none },
+	VertSplit = { fg = core.syntax_fold_bg, bg = nil, style = nil },
 	Folded = { fg = core.syntax_bg, bg = core.syntax_fold_bg, style = nil },
 	FoldColumn = { fg = uno.uno_3, bg = core.syntax_cursor_line, style = nil },
 	IncSearch = { fg = core.syntax_bg, bg = uno.uno_4, style = nil },
