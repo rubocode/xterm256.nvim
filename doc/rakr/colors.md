@@ -2,6 +2,7 @@
 -- github.com/rakr/vim-two-firewatch
 --
 
+```vimscript
 let s:uno_1 = 'd6e9ff'
 let s:uno_2 = 'abb2bf'
 let s:uno_3 = '6e88a6'
@@ -23,3 +24,4 @@ let s:syntax_gutter           = '636d83'
 let s:syntax_selection        = '3e4452'
 let s:syntax_fold_bg          = '5c6370'
 let s:syntax_cursor_line      = '2c323c'
+```
