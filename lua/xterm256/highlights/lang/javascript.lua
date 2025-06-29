@@ -8,7 +8,7 @@ local sty = require("xterm256.palette.std.style")
 
 local M = {}
 
-M.CHNAGES = {
+M.CHANGES = {
 	coffeeString = { fg = duo.duo_2, "", style = nil },
 
 	javaScriptBraces = { fg = uno.uno_3, "", style = nil },

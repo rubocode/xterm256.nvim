@@ -14,4 +14,4 @@ M.CHANGES = {
 
 M.LINKS = {}
 
-return { M }
+return M
