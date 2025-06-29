@@ -10,14 +10,14 @@ local M = {}
 
 M.CHANGES = {
 	-- Vim highlighting
-	-- vimCommentTitle = { fg = uno.uno_4, bg = core.Empty, 'bold')
-	vimCommand = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
-	vimVar = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
-	vimEnvVar = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	-- vimCommentTitle = { fg = uno.uno_4, bg = nil, 'bold')
+	vimCommand = { fg = uno.uno_1, bg = nil, style = nil },
+	vimVar = { fg = duo.duo_2, bg = nil, style = nil },
+	vimEnvVar = { fg = duo.duo_3, bg = nil, style = nil },
 
 	-- Vim Help highlights
-	helpHyperTextJump = { fg = duo.duo_1, bg = core.Empty, style = sty.Empty },
-	helpSpecial = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
+	helpHyperTextJump = { fg = duo.duo_1, bg = nil, style = nil },
+	helpSpecial = { fg = duo.duo_2, bg = nil, style = nil },
 }
 
 M.LINKS = {}

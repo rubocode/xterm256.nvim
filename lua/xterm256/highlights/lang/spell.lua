@@ -9,10 +9,10 @@ local sty = require("xterm256.palette.std.style")
 local M = {}
 
 M.CHANGES = {
-	SpellBad = { fg = core.Empty, bg = core.syntax_bg, style = sty.undercurl },
-	SpellLocal = { fg = core.Empty, bg = core.syntax_bg, style = sty.undercurl },
-	SpellCap = { fg = core.Empty, bg = core.syntax_bg, style = sty.undercurl },
-	SpellRare = { fg = core.Empty, bg = core.syntax_bg, style = sty.undercurl },
+	SpellBad = { fg = nil, bg = core.syntax_bg, style = sty.undercurl },
+	SpellLocal = { fg = nil, bg = core.syntax_bg, style = sty.undercurl },
+	SpellCap = { fg = nil, bg = core.syntax_bg, style = sty.undercurl },
+	SpellRare = { fg = nil, bg = core.syntax_bg, style = sty.undercurl },
 }
 
 M.LINKS = {}

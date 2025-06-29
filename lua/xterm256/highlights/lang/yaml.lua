@@ -9,11 +9,11 @@ local sty = require("xterm256.palette.std.style")
 local M = {}
 
 M.CHANGES = {
-	yamlKey = { fg = duo.duo_2, bg = core.Empty, style = sty.Empty },
-	yamlOperator = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	yamlKey = { fg = duo.duo_2, bg = nil, style = nil },
+	yamlOperator = { fg = uno.uno_4, bg = nil, style = nil },
 
-	liquidDelimiter = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
-	liquidKeyword = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
+	liquidDelimiter = { fg = uno.uno_4, bg = nil, style = nil },
+	liquidKeyword = { fg = uno.uno_3, bg = nil, style = nil },
 }
 
 M.LINKS = {}

@@ -9,7 +9,7 @@ local sty = require("xterm256.palette.std.style")
 local M = {}
 
 M.CHANGES = {
-	goDeclaration = { fg = duo.duo_3, bg = core.Empty, style = sty.Empty },
+	goDeclaration = { fg = duo.duo_3, bg = nil, style = nil },
 }
 
 M.LINKS = {}

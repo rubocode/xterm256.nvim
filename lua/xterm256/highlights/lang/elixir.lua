@@ -9,17 +9,17 @@ local sty = require("xterm256.palette.std.style")
 local M = {}
 
 M.CHANGES = {
-	elixirAtom = { fg = core.syntax_accent, "", style = sty.Empty },
-	elixirAlias = { fg = duo.duo_1, "", style = sty.Empty },
-	elixirBlock = { fg = uno.uno_3, "", style = sty.Empty },
-	elixirBlockDefinition = { fg = duo.duo_2, "", style = sty.Empty },
-	elixirInclude = { fg = duo.duo_2, "", style = sty.Empty },
-	elixirId = { fg = uno.uno_2, "", style = sty.Empty },
-	elixirModuleDeclaration = { fg = uno.uno_1, "", style = sty.Empty },
-	elixirModuleDefine = { fg = duo.duo_2, "", style = sty.Empty },
-	elixirOperator = { fg = uno.uno_3, "", style = sty.Empty },
-	elixirSigil = { fg = uno.uno_4, "", style = sty.Empty },
-	elixirVariable = { fg = duo.duo_2, "", style = sty.Empty },
+	elixirAtom = { fg = core.syntax_accent, "", style = nil },
+	elixirAlias = { fg = duo.duo_1, "", style = nil },
+	elixirBlock = { fg = uno.uno_3, "", style = nil },
+	elixirBlockDefinition = { fg = duo.duo_2, "", style = nil },
+	elixirInclude = { fg = duo.duo_2, "", style = nil },
+	elixirId = { fg = uno.uno_2, "", style = nil },
+	elixirModuleDeclaration = { fg = uno.uno_1, "", style = nil },
+	elixirModuleDefine = { fg = duo.duo_2, "", style = nil },
+	elixirOperator = { fg = uno.uno_3, "", style = nil },
+	elixirSigil = { fg = uno.uno_4, "", style = nil },
+	elixirVariable = { fg = duo.duo_2, "", style = nil },
 }
 
 M.LINKS = {}

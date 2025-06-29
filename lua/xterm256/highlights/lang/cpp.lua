@@ -8,7 +8,7 @@ local sty = require("ruboterm256.palette.std.style")
 local M = {}
 
 M.CHANGES = {
-	cCustomParen = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
+	cCustomParen = { fg = uno.uno_4, bg = nil, style = nil },
 }
 
 M.LINKS = {}

@@ -9,12 +9,12 @@ local sty = require("xterm256.palette.std.style")
 local M = {}
 
 M.CHANGES = {
-	htmlArg = { fg = uno.uno_2, bg = core.Empty, style = sty.Empty },
-	htmlTagName = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
-	htmlSpecialTagName = { fg = uno.uno_1, bg = core.Empty, style = sty.Empty },
-	htmlTag = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
-	liquidDelimiter = { fg = uno.uno_4, bg = core.Empty, style = sty.Empty },
-	liquidKeyword = { fg = uno.uno_3, bg = core.Empty, style = sty.Empty },
+	htmlArg = { fg = uno.uno_2, bg = nil, style = nil },
+	htmlTagName = { fg = uno.uno_1, bg = nil, style = nil },
+	htmlSpecialTagName = { fg = uno.uno_1, bg = nil, style = nil },
+	htmlTag = { fg = uno.uno_3, bg = nil, style = nil },
+	liquidDelimiter = { fg = uno.uno_4, bg = nil, style = nil },
+	liquidKeyword = { fg = uno.uno_3, bg = nil, style = nil },
 }
 
 M.LINKS = {}

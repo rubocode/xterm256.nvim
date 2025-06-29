@@ -8,7 +8,7 @@ local sty = require("xterm256.palette.std.style")
 local M = {}
 
 M.CHANGES = {
-	asciidocListingBlock = { fg = uno.uno_2, bg = core.Empty, style = sty.Empty },
+	asciidocListingBlock = { fg = uno.uno_2, bg = nil, style = nil },
 }
 
 M.LINKS = {}
