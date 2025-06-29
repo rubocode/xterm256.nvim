@@ -10,19 +10,33 @@ local process_changes = function(changes)
 		-- print("--------")
 		-- print(k, v.fg, v.bg, v.style)
 
+		local verbose = false
+
+		if group == "Comment" then
+			verbose = true
+		end
+
 		if v.fg then
-			-- vim.notify(group .. "> fg: " .. v.fg.i .. " " .. v.fg.hex)
+			if verbose then
+				print(group .. "> fg: " .. v.fg.i .. " " .. v.fg.hex)
+			end
 			vim.api.nvim_set_hl(0, group, { fg = v.fg.hex, ctermfg = v.fg.i })
 		end
 
 		if v.bg then
-			-- vim.notify(group .. "> bg: " .. v.bg.i .. " " .. v.bg.hex)
+			if verbose then
+				print(group .. "> bg: " .. v.bg.i .. " " .. v.bg.hex)
+			end
 			vim.api.nvim_set_hl(0, group, { bg = v.bg.hex, ctermbg = v.bg.i })
 		end
 
 		if v.style then
-			-- vim.notify(group .. "> style: " .. v.style.text)
-			vim.api.nvim_set_hl(0, group, { [v.style.text] = true })
+			if verbose then
+				print(group .. "> style: " .. v.style.text)
+			end
+			if v.style.text == "italic" then
+				-- vim.api.nvim_set_hl(0, group, { italic = true })
+			end
 		end
 	end
 end

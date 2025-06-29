@@ -1,7 +1,6 @@
 local M = {}
 
-local core = require("xterm256.highlights.std.core")
-local editor = require("xterm.highlights.etd.editor")
+local editor = require("xterm256.highlights.std.editor")
 local syntax = require("xterm256.highlights.std.syntax")
 
 local asciidoc = require("xterm256.highlights.lang.asciidoc")
@@ -27,7 +26,6 @@ local yaml = require("xterm256.highlights.lang.yaml")
 local work = require("xterm256.util.work")
 
 function M.setup()
-	work.process(core)
 	work.process(editor)
 	work.process(syntax)
 
