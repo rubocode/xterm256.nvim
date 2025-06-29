@@ -4,7 +4,7 @@
 local M = {}
 
 local process_changes = function(changes)
-	print("processing changes...")
+	-- print("processing changes...")
 	for k, v in pairs(changes) do
 		local group = k
 		-- print("--------")
@@ -28,8 +28,8 @@ local process_changes = function(changes)
 end
 
 local process_links = function(links)
-	print("processing links...")
-	print(links)
+	-- print("processing links...")
+	-- print(links)
 end
 
 function M.process(m)

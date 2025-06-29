@@ -26,8 +26,6 @@ local yaml = require("xterm256.highlights.lang.yaml")
 local work = require("xterm256.util.work")
 
 function M.setup()
-	print("Initiating processing...")
-
 	work.process(core)
 	work.process(syntax)
 
@@ -38,11 +36,8 @@ function M.setup()
 	work.process(diff)
 	work.process(elixir)
 	-- work.process(git)
-	print("go!", go)
 	work.process(go)
-	print("html!", html)
 	work.process(html)
-
 	work.process(javascript)
 	work.process(json)
 	work.process(md)
@@ -53,8 +48,6 @@ function M.setup()
 	work.process(vim)
 	work.process(xml)
 	work.process(yaml)
-
-	print("Done processing!")
 end
 
 return M
