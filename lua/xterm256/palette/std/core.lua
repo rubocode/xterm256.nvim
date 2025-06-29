@@ -7,7 +7,7 @@ local uno = require("xterm256.palette.std.uno")
 
 local M = {
 	syntax_color_renamed = aux.DeepSkyBlue1,
-	syntax_color_added = aux.SprinGreen2,
+	syntax_color_added = aux.SpringGreen2,
 	syntax_color_modified = aux.Tan,
 	syntax_color_removed = aux.IndianRed,
 	syntax_fg = uno.uno_2,
