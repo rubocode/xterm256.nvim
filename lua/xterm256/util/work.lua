@@ -12,8 +12,8 @@ local process_changes = function(changes)
 
 		local verbose = false
 
-		if group == "Comment" then
-			verbose = true
+		if group == "Normal" then
+			-- verbose = true
 		end
 
 		if v.fg then
@@ -32,11 +32,9 @@ local process_changes = function(changes)
 
 		if v.style then
 			if verbose then
-				print(group .. "> style: " .. v.style.text)
+				-- print(group .. "> style: " .. v.style.text)
 			end
-			if v.style.text == "italic" then
-				-- vim.api.nvim_set_hl(0, group, { italic = true })
-			end
+			vim.api.nvim_set_hl(0, group, { [v.style.text] = true })
 		end
 	end
 end
