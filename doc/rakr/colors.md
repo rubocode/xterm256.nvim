@@ -1,6 +1,5 @@
--- Dark Mode Color Definitions
--- github.com/rakr/vim-two-firewatch
---
+# Dark Mode Color Definitions
+[github.com/rakr/vim-two-firewatch](https://github.com/rakr/vim-two-firewatch)
 
 ```vimscript
 let s:uno_1 = 'd6e9ff'
