@@ -36,9 +36,9 @@
 -- The values used here are thus the approximations.
 --
 -- NOTE: The original 'dark' mode definition of the 3 duo colors in two-firewatch
--- let s:duo_1 = 'c8ae9d'
--- let s:duo_2 = 'e06c75'
--- let s:duo_3 = 'dd672c'
+-- let s:duo_1 = 'c8ae9d' => 181, MistyRose3
+-- let s:duo_2 = 'e06c75' => 168, HotPink3
+-- let s:duo_3 = 'dd672c' => 166, DarkOrange3
 
 local aux = require("xterm256.palette.xterm256.auxiliary")
 

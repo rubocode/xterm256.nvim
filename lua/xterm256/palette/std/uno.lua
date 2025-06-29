@@ -19,10 +19,10 @@
 -- So, I will use the four 'dark' colors for UNO that two-firewatch uses.
 --
 -- NOTE: The original 'dark' mode definition of the 4 uno colors in two-firewatch
--- 	let s:uno_1 = 'd6e9ff'
--- 	let s:uno_2 = 'abb2bf'
--- 	let s:uno_3 = '6e88a6'
--- 	let s:uno_4 = '55606d'
+-- 	let s:uno_1 = 'd6e9ff' => 189, LightSteelBlue1
+-- 	let s:uno_2 = 'abb2bf' => 145, Grey69
+-- 	let s:uno_3 = '6e88a6' => 67, SteelBlue
+-- 	let s:uno_4 = '55606d' => 59, Grey37
 --
 
 local sys = require("xterm256.palette.xterm256.system")
@@ -30,9 +30,9 @@ local aux = require("xterm256.palette.xterm256.auxiliary")
 
 local M = {
 	uno_1 = aux.LightSteelBlue1,
-	uno_2 = aux.Grey70,
-	uno_3 = aux.DeepSkyBlue4A,
-	uno_4 = aux.Orange4,
+	uno_2 = aux.Grey69,
+	uno_3 = aux.SteelBlue,
+	uno_4 = aux.Grey37,
 }
 
 return M
