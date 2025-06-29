@@ -1,5 +1,7 @@
 local M = {}
 
+print("Inside xterm256/init.lua")
+
 local core = require("xterm256.highlights.std.core")
 
 local sty = require("xterm256.palette.std.style")
@@ -11,17 +13,17 @@ function M.setup()
 		print(k, v.fg, v.bg, v.style)
 
 		if v.fg then
-			vim.notify(group .. "> fg: " .. v.fg.i .. " " .. v.fg.hex)
-			vim.api.nvim_set_hl(0, group, { fg = Grey54, ctermfg = v.fg.i })
+			-- vim.notify(group .. "> fg: " .. v.fg.i .. " " .. v.fg.hex)
+			vim.api.nvim_set_hl(0, group, { fg = v.fg.hex, ctermfg = v.fg.i })
 		end
 
 		if v.bg then
-			vim.notify(group .. "> bg: " .. v.bg.i .. " " .. v.bg.hex)
+			-- vim.notify(group .. "> bg: " .. v.bg.i .. " " .. v.bg.hex)
 			vim.api.nvim_set_hl(0, group, { bg = v.bg.hex, ctermbg = v.bg.i })
 		end
 
 		if v.style then
-			vim.notify(group .. "> style: " .. v.style.text)
+			-- vim.notify(group .. "> style: " .. v.style.text)
 			vim.api.nvim_set_hl(0, group, { [v.style.text] = true })
 		end
 	end
