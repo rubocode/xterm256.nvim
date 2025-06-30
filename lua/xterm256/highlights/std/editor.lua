@@ -50,7 +50,6 @@ M.CHANGES = {
 	VisualNOS = { fg = nil, bg = core.syntax_selection, style = nil },
 	WarningMsg = { fg = core.syntax_accent, bg = nil, style = nil },
 	WildMenu = { fg = core.syntax_fg, bg = uno.uno_4, style = nil },
-	bold = { fg = nil, bg = nil, style = sty.bold },
 }
 
 M.LINKS = {}
