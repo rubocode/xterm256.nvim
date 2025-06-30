@@ -29,10 +29,10 @@ M.CHANGES = {
 	ModeMsg = { fg = core.syntax_color_added, bg = nil, style = nil },
 	MoreMsg = { fg = core.syntax_fg, bg = nil, style = nil },
 	NonText = { fg = uno.uno_4, bg = nil, style = nil },
-	PMenu = { fg = nil, bg = core.syntax_selection, style = nil },
+	PMenu = { fg = uno.uno_4, bg = core.syntax_selection, style = nil },
 	PMenuSel = { fg = nil, bg = core.syntax_bg, style = nil },
 	PMenuSbar = { fg = nil, bg = core.syntax_bg, style = nil },
-	PMenuThumb = { fg = nil, bg = uno.uno_1, style = nil },
+	PMenuThumb = { fg = uno.uno_4, bg = uno.uno_1, style = nil },
 	Question = { fg = core.syntax_accent, bg = nil, style = nil },
 	Search = { fg = core.syntax_bg, bg = uno.uno_4, style = nil },
 	SpecialKey = { fg = core.syntax_fold_bg, bg = nil, style = nil },
@@ -50,6 +50,7 @@ M.CHANGES = {
 	Normal = { fg = core.syntax_fg, bg = core.syntax_bg, style = nil },
 	SignColumn = { fg = nil, bg = uno.uno_4, style = nil },
 	Special = { fg = duo.duo_2, bg = nil, style = nil },
+	DiagnosticInfo = { fg = uno.uno_3, bg = nil, style = nil },
 }
 
 M.LINKS = {}

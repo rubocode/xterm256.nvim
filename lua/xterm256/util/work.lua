@@ -39,6 +39,9 @@ local process_changes = function(changes)
 			opts[v.style.text] = true
 		end
 
+		-- italic = true works only when the italic version of the font is installed.
+		-- otherwise, you just get the regular font.
+		--
 		for p, q in pairs(opts) do
 			if verbose then
 				print(group, p, q)
