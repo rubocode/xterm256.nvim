@@ -53,7 +53,7 @@ end
 
 local process_links = function(links)
 	for group, opts in pairs(links) do
-		print(group, " -> ", opts.link)
+		-- print(group, " -> ", opts.link)
 		vim.api.nvim_set_hl(0, group, opts)
 	end
 end
