@@ -52,8 +52,10 @@ local process_changes = function(changes)
 end
 
 local process_links = function(links)
-	-- print("processing links...")
-	-- print(links)
+	for group, opts in pairs(links) do
+		print(group, " -> ", opts.link)
+		vim.api.nvim_set_hl(0, group, opts)
+	end
 end
 
 function M.process(m)

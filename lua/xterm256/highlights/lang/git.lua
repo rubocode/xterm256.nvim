@@ -29,16 +29,16 @@ M.CHANGES = {
 }
 
 M.LINKS = {
-	gitcommitNoBranch = { link_to = "gitcommitBranch" },
-	gitcommitUntracked = { link_to = "gitcommitComment" },
-	gitcommitDiscarded = { link_to = "gitcommitComment" },
-	gitcommitSelected = { link_to = "gitcommitComment" },
-	gitcommitDiscardedArrow = { link_to = "gitcommitDiscardedFile" },
-	gitcommitSelectedArrow = { link_to = "gitcommitSelectedFile" },
-	gitcommitUnmergedArrow = { link_to = "gitcommitUnmergedFile" },
+	gitcommitNoBranch = { link = "gitcommitBranch" },
+	gitcommitUntracked = { link = "gitcommitComment" },
+	gitcommitDiscarded = { link = "gitcommitComment" },
+	gitcommitSelected = { link = "gitcommitComment" },
+	gitcommitDiscardedArrow = { link = "gitcommitDiscardedFile" },
+	gitcommitSelectedArrow = { link = "gitcommitSelectedFile" },
+	gitcommitUnmergedArrow = { link = "gitcommitUnmergedFile" },
 
-	GitGutterAdd = { link_to = "SignifySignAdd" },
-	GitGutterChange = { link_to = "SignifySignChange" },
+	GitGutterAdd = { link = "SignifySignAdd" },
+	GitGutterChange = { link = "SignifySignChange" },
 }
 
 return M
