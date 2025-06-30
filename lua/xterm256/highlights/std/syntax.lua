@@ -9,7 +9,7 @@ local sty = require("xterm256.palette.std.style")
 local M = {}
 
 M.CHANGES = {
-	Comment = { fg = uno.uno_4, bg = nil, style = nil },
+	Comment = { fg = uno.uno_4, bg = nil, style = sty.italic },
 	Constant = { fg = duo.duo_2, bg = nil, style = nil },
 	String = { fg = duo.duo_1, bg = nil, style = nil },
 	Character = { fg = duo.duo_2, bg = nil, style = nil },

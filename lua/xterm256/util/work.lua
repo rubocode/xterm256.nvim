@@ -5,14 +5,14 @@ local M = {}
 
 local process_changes = function(changes)
 	-- print("processing changes...")
+	--
 	for k, v in pairs(changes) do
 		local group = k
-		-- print("--------")
-		-- print(k, v.fg, v.bg, v.style)
+		local opts = {}
 
 		local verbose = false
 
-		if group == "Normal" then
+		if group == "Comment" then
 			-- verbose = true
 		end
 
@@ -20,22 +20,31 @@ local process_changes = function(changes)
 			if verbose then
 				print(group .. "> fg: " .. v.fg.i .. " " .. v.fg.hex)
 			end
-			vim.api.nvim_set_hl(0, group, { fg = v.fg.hex, ctermfg = v.fg.i })
+			opts["fg"] = v.fg.hex
+			opts["ctermfg"] = v.fg.i
 		end
 
 		if v.bg then
 			if verbose then
 				print(group .. "> bg: " .. v.bg.i .. " " .. v.bg.hex)
 			end
-			vim.api.nvim_set_hl(0, group, { bg = v.bg.hex, ctermbg = v.bg.i })
+			opts["bg"] = v.bg.hex
+			opts["ctermbg"] = v.bg.i
 		end
 
 		if v.style then
 			if verbose then
-				-- print(group .. "> style: " .. v.style.text)
+				print(group .. "> style: " .. v.style.text)
 			end
-			vim.api.nvim_set_hl(0, group, { [v.style.text] = true })
+			opts[v.style.text] = true
 		end
+
+		for p, q in pairs(opts) do
+			if verbose then
+				print(group, p, q)
+			end
+		end
+		vim.api.nvim_set_hl(0, group, opts)
 	end
 end
 
