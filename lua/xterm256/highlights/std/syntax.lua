@@ -23,7 +23,7 @@ M.CHANGES = {
 	Error = { fg = core.syntax_color_removed, bg = core.syntax_bg, style = sty.bold },
 	Exception = { fg = uno.uno_1, bg = nil, style = nil },
 	Float = { fg = duo.duo_2, bg = nil, style = nil },
-	Function = { fg = uno.uno_2, bg = nil, style = nil },
+	Function = { fg = uno.uno_3, bg = nil, style = sty.italic },
 	Identifier = { fg = uno.uno_3, bg = nil, style = nil },
 	Ignore = { fg = nil, bg = nil, style = nil },
 	Keyword = { fg = uno.uno_1, bg = nil, style = nil },
