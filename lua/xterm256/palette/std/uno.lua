@@ -26,7 +26,7 @@ local aux = require("xterm256.palette.xterm256.auxiliary")
 
 local M = {
 	uno_1 = aux.LightSteelBlue1,
-	uno_2 = aux.Grey62,
+	uno_2 = aux.Grey69,
 	uno_3 = aux.SteelBlue,
 	uno_4 = aux.Grey37,
 }
