@@ -19,7 +19,6 @@ There are many holes in the mactching of highlight groups and I can now experime
 color pallettes.
 
 So, I am going to leave this project in this state and continue the creation of a colorscheme
-that I will be using customized just for my taste.
+that I will be using customized just for my taste under a different project.
 
 This was a good learning experience.
-
