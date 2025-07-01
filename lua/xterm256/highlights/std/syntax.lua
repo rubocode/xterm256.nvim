@@ -19,7 +19,7 @@ M.CHANGES = {
 	Conditional = { fg = core.syntax_accent, bg = nil, style = nil },
 	Constant = { fg = duo.duo_2, bg = nil, style = nil },
 	Debug = { fg = nil, bg = nil, style = nil },
-	Delimiter = { fg = uno.uno_4, bg = nil, style = nil },
+	Delimiter = { fg = uno.uno_2, bg = nil, style = nil },
 	Error = { fg = core.syntax_color_removed, bg = core.syntax_bg, style = sty.bold },
 	Exception = { fg = uno.uno_1, bg = nil, style = nil },
 	Float = { fg = duo.duo_2, bg = nil, style = nil },
