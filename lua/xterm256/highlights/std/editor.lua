@@ -17,7 +17,7 @@ M.CHANGES = {
 	CursorLine = { fg = nil, bg = core.syntax_cursor_line, style = nil },
 	CursorLineNr = { fg = uno.uno_2, bg = nil, style = sty.none },
 	DiagnosticInfo = { fg = uno.uno_3, bg = nil, style = nil },
-	Directory = { fg = uno.uno_1, bg = nil, style = nil },
+	Directory = { fg = uno.uno_3, bg = nil, style = nil },
 	ErrorMsg = { fg = core.syntax_color_removed, bg = core.syntax_bg, style = nil },
 	FoldColumn = { fg = uno.uno_3, bg = core.syntax_cursor_line, style = nil },
 	Folded = { fg = core.syntax_bg, bg = core.syntax_fold_bg, style = nil },
